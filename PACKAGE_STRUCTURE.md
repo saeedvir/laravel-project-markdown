@@ -114,12 +114,3 @@ composer test
 # or
 ./vendor/bin/phpunit
 ```
-
-## Publishing to Packagist
-
-1. Update the vendor name in `composer.json`
-2. Update the namespace in all PHP files
-3. Update the README.md with correct vendor name
-4. Tag the release: `git tag v1.0.0`
-5. Push to GitHub: `git push origin v1.0.0`
-6. Submit to Packagist
