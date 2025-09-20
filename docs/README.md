@@ -30,7 +30,7 @@ composer require saeedvir/laravel-project-markdown
     "repositories": [
         {
             "type": "path",
-            "url": "../projector"
+            "url": "../packages"
         }
     ],
     "require": {
