@@ -7,16 +7,13 @@ Welcome to the comprehensive documentation for the Laravel Project Markdown pack
 ### Core Documentation
 
 - **[Main README](../README.md)** - Complete package overview, installation, and usage guide
-- **[API Documentation](API.md)** - Detailed API reference for commands, configuration, and integration
-- **[Examples & Use Cases](EXAMPLES.md)** - Comprehensive examples and real-world use cases
 - **[AI Readable Documentation](AI_READABLE.md)** - AI integration guide and structured data format
 
 ### Quick Start
 
 1. **[Installation Guide](#installation)** - Get started quickly
 2. **[Basic Usage](#basic-usage)** - Run your first commands
-3. **[Configuration](#configuration)** - Customize the package
-4. **[Advanced Features](#advanced-features)** - Explore advanced capabilities
+3. **[Advanced Features](#advanced-features)** - Explore advanced capabilities
 
 ## 🚀 Installation
 
@@ -79,36 +76,6 @@ php artisan project:db-markdown --path=docs/database.md
 # Creates: docs/database.md and docs/database.json
 ```
 
-### Custom Configuration
-
-```php
-// config/laravel-project-markdown.php
-return [
-    'files' => [
-        'exclude_directories' => [
-            'vendor',
-            'storage',
-            'node_modules',
-            'tests',
-            '.git',
-        ],
-        'preview' => [
-            'max_lines' => 10,
-            'max_file_size' => 1024 * 1024, // 1MB
-        ],
-    ],
-    'database' => [
-        'sample_data' => [
-            'enabled' => true,
-            'max_rows' => 3,
-        ],
-        'er_diagram' => [
-            'enabled' => true,
-            'format' => 'mermaid',
-        ],
-    ],
-];
-```
 
 ## 📊 Output Examples
 
@@ -227,35 +194,6 @@ def analyze_laravel_project(project_json_path):
     return analysis
 ```
 
-## 🔄 CI/CD Integration
-
-### GitHub Actions
-
-```yaml
-name: Generate Documentation
-on: [push, pull_request]
-
-jobs:
-  documentation:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: '8.1'
-      - name: Install dependencies
-        run: composer install
-      - name: Generate project documentation
-        run: php artisan project:files-markdown --output=docs/project.md
-      - name: Generate database documentation
-        run: php artisan project:db-markdown --path=docs/database.md
-      - name: Upload documentation
-        uses: actions/upload-artifact@v3
-        with:
-          name: documentation
-          path: docs/
-```
 
 ## 🧪 Testing
 
