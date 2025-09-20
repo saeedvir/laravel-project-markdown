@@ -42,14 +42,6 @@ A comprehensive Laravel package that provides artisan commands to generate detai
 composer require saeedvir/laravel-project-markdown
 ```
 
-### Publishing Your Own Package
-
-If you want to publish this package or create your own version:
-
-1. **Quick Start**: See [PUBLISHING_STEPS.md](PUBLISHING_STEPS.md) for 5-minute setup
-2. **Complete Guide**: See [docs/PUBLISHING.md](docs/PUBLISHING.md) for detailed instructions
-3. **Setup Scripts**: Use `scripts/setup-git.bat` (Windows) or `scripts/setup-git.sh` (Linux/Mac)
-
 ### Local Development Installation
 
 1. **Add path repository** to your Laravel project's `composer.json`:
@@ -344,35 +336,6 @@ php artisan project:files-markdown /path/to/project \
     --depth=2
 ```
 
-## 🔄 Integration with CI/CD
-
-### GitHub Actions Example
-
-```yaml
-name: Generate Documentation
-on: [push, pull_request]
-
-jobs:
-  documentation:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: '8.1'
-      - name: Install dependencies
-        run: composer install
-      - name: Generate project documentation
-        run: php artisan project:files-markdown --output=docs/project.md
-      - name: Generate database documentation
-        run: php artisan project:db-markdown --path=docs/database.md
-      - name: Upload documentation
-        uses: actions/upload-artifact@v3
-        with:
-          name: documentation
-          path: docs/
-```
 
 ## 🤝 Contributing
 
@@ -384,7 +347,7 @@ jobs:
 
 ## 📝 Changelog
 
-### [1.0.0] - 2024-01-15
+### [1.0.0] - 2025-09-20
 
 #### Added
 - Initial release of Laravel Project Markdown package
@@ -420,14 +383,5 @@ This package is open-sourced software licensed under the [MIT license](https://o
 **Saeedvir**
 - Email: saeed.es91@gmail.com
 - GitHub: [@saeedvir](https://github.com/saeedvir)
-
-## 🙏 Acknowledgments
-
-- Laravel Framework team for the excellent framework
-- Composer team for dependency management
-- Mermaid team for diagram generation
-- All contributors and users of this package
-
----
 
 **Made with ❤️ for the Laravel community**
