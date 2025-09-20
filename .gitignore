@@ -1,0 +1,17 @@
+/vendor/
+/node_modules/
+/.idea/
+/.vscode/
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+.env
+.env.local
+.env.*.local
+composer.lock
+package-lock.json
+yarn.lock
+.phpunit.result.cache
+coverage/
+.nyc_output/

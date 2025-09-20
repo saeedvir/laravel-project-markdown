@@ -1,0 +1,60 @@
+{
+    "name": "saeedvir/laravel-project-markdown",
+    "description": "Laravel package to generate comprehensive markdown documentation for project files and database schema with AI-readable output",
+    "type": "library",
+    "version": "1.0.0",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "markdown",
+        "documentation",
+        "artisan",
+        "commands",
+        "database",
+        "schema",
+        "project-structure",
+        "ai-readable",
+        "mermaid",
+        "erd"
+    ],
+    "homepage": "https://github.com/saeedvir/laravel-project-markdown",
+    "support": {
+        "issues": "https://github.com/saeedvir/laravel-project-markdown/issues",
+        "source": "https://github.com/saeedvir/laravel-project-markdown"
+    },
+    "authors": [
+        {
+            "name": "saeedvir",
+            "email": "saeed.es91@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^10.0|^11.0|^12.0",
+        "illuminate/console": "^10.0|^11.0|^12.0",
+        "illuminate/database": "^10.0|^11.0|^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0|^10.0",
+        "phpunit/phpunit": "^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Saeedvir\\LaravelProjectMarkdown\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Saeedvir\\LaravelProjectMarkdown\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Saeedvir\\LaravelProjectMarkdown\\LaravelProjectMarkdownServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
