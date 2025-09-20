@@ -16,8 +16,6 @@ laravel-project-markdown/
 │   └── laravel-project-markdown.php       # Enhanced package configuration
 ├── docs/                                  # Comprehensive documentation
 │   ├── README.md                          # Documentation index
-│   ├── API.md                             # API documentation
-│   ├── EXAMPLES.md                        # Examples and use cases
 │   └── AI_READABLE.md                     # AI integration guide
 ├── src/
 │   ├── LaravelProjectMarkdownServiceProvider.php  # Service provider
@@ -50,8 +48,6 @@ laravel-project-markdown/
 ### Documentation
 
 - **docs/README.md**: Documentation index and quick start guide
-- **docs/API.md**: Comprehensive API documentation with command signatures, parameters, and integration examples
-- **docs/EXAMPLES.md**: Real-world examples, use cases, CI/CD integration, and best practices
 - **docs/AI_READABLE.md**: AI integration guide with structured data formats and processing examples
 
 ### Source Code
